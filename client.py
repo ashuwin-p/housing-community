@@ -38,7 +38,7 @@ class Validate_Input_Data:
 
     @staticmethod
     def validate_email(ipemail):
-        pattern = r"^[a-zA-Z0-9._%+-]+@outlook\.com$"
+        pattern = r"^[a-zA-Z0-9._%+-]+@gmail\.com$"
         if re.match(pattern, ipemail):
             return True
         return False
