@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Client Sign In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cl.css') }}" />
+  </head>
+  <body>
+    <h2>Client Sign In</h2>
+    <form action="/login" method="post">
+      <label for="email">Email ID:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <input type="submit" value="Sign In" />
+      <a href="/cr.html" class="signup-button">Sign Up</a>
+    </form>
+  </body>
+</html>
